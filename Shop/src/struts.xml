@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">  
+      
+<struts>  
+    <constant name="struts.action.extension" value="action" />  
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+   <package name="user_1" extends="json-default">
+   		
+   		<action name="user_regist" class="com.lol.controller.UserController" method="regist">
+			<result type="json" name="success"></result>
+			<result type="json" name="error"></result>
+		</action>
+		
+		<action name="user_login" class="com.lol.controller.UserController" method="login">
+			<result name="success" type="json"></result>
+			<result name="error" type="json"></result>
+		</action>
+		
+		<action name="exit" class="com.lol.controller.UserController" method="exit">
+			<result name="success">login.jsp</result>
+		</action>
+		
+		<action name="end_pay" class="com.lol.controller.SkinController" method="end_pay">
+			<result name="success" type="json"></result>
+		</action>
+   </package>
+   
+   <package name="index" extends="struts-default">
+		<action name="indexLoad" class="com.lol.controller.IndexLoadController">
+			<result name="success" type="redirect">/index.jsp</result>
+		</action>
+		
+		<action name="skin_message" class="com.lol.controller.SkinController">
+			<result name="success">/product.jsp</result>
+		</action>
+		
+		<action name="searchSkin" class="com.lol.controller.SkinController" method="searchSkin">
+			<result name="success" type="redirect">/list.jsp</result>
+		</action>
+		
+		<action name="searchSkinOfRightEncoding" class="com.lol.controller.SkinController" method="searchSkinOfRightEncoding">
+			<result name="success" type="redirect">/list.jsp</result>
+		</action>
+		
+		<action name="searchSkinBySkinHeroType" class="com.lol.controller.SkinController" method="searchSkinBySkinHeroType">
+			<result name="success" type="redirect">/list.jsp</result>
+		</action>
+		
+		<action name="skinList" class="com.lol.controller.SkinController" method="skinList">
+			<result name="success" type="redirect">/list.jsp</result>
+		</action>
+		
+		<action name="submitOrder" class="com.lol.controller.SkinController" method="submitOrder">
+			<result name="success">/payMoney.jsp</result>
+		</action>
+		
+		<action name="goOrderDetail" class="com.lol.controller.SkinController" method="goOrderDetail">
+			<result name="success">/pay.jsp</result>
+		</action>
+		
+		<action name="addToShopCar" class="com.lol.controller.SkinController" method="addToShopCar">
+		</action>
+		
+		<action name="myShopCar" class="com.lol.controller.SkinController" method="myShopCar">
+			<result name="success">/shopCar.jsp</result>
+		</action>
+		
+		<action name="myOrder" class="com.lol.controller.SkinController" method="myOrder">
+			<result name="success">/order.jsp</result>
+		</action>
+		
+		<action name="shopCarPay" class="com.lol.controller.SkinController" method="shopCarPay">
+			<result name="success">/pay.jsp</result>
+		</action>
+		
+		<action name="orderXq" class="com.lol.controller.SkinController" method="orderXq">
+			<result name="success">/orderxq.jsp</result>
+		</action>
+		
+		<action name="payMoney" class="com.lol.controller.SkinController" method="payMoney">
+			<result name="success">/payMoney.jsp</result>
+		</action>
+		
+		<action name="deleteOrder" class="com.lol.controller.SkinController" method="deleteOrder">
+		</action>
+		
+		<action name="search_like" class="com.lol.controller.SkinController" method="search_like">
+			<result name="success">/list.jsp</result>
+		</action>
+	</package>
+	
+	
+	
+	
+	<!-- 服务端 -->
+	
+	<package name="default" namespace="/jsp" extends="struts-default">
+   
+   		<action name="getTanke" class="getAllSkinAction">
+    		<result name="success">/jsp/LoL_Skin.jsp</result>
+    	</action>
+    	
+    	
+    	
+		<action name="allBanner" class="getAllBanner" >
+			<result name="success">/jsp/Show_All_Banner.jsp</result>
+		</action>
+		
+		<action name="changeStatus" class="getAllBanner" method="changeStatus">
+			
+		</action>
+		
+ 		<action name="deletebanner" class="getAllBanner" method="deletebanner">
+			
+		</action> 
+		
+		<!-- <action name="getAllOrder" class="getAllOrder">
+			<result name="success">All_Order.jsp</result>
+		</action> --> 
+		
+		 <action name="changeOrderStatus" class="getAllOrder" method="changeOrderStatus">
+			
+		</action>
+		
+		<action name="getOrderByOrderId" class="getAllOrder" method="getOrderByOrderId">
+			
+		</action>
+		
+		 <action name="allOrder" class="getAllOrder" method="allOrder">
+			
+		</action>
+		
+	</package>
+      
+     <package name="json" namespace="/jsp" extends="json-default">
+     	<action name="getAllOrder" class="getAllOrder">
+			<result type="json"></result>
+		</action> 
+     </package> 
+     
+     
+     
+     <package name="lol"   extends="struts-default">
+    	<action name="addBanner" class="addBannerAction">
+    		<result name="success">/jsp/Add_Banner.jsp</result>
+    	</action>
+    	
+    	<action name="addSkin" class="addSkinAction">
+  			<!-- ajax -->
+    	</action>
+    	
+    	<!-- <action name="getTanke" class="getAllSkinAction">
+    		<result name="success">/jsp/LoL_Skin.jsp</result>
+    	</action> -->
+    	
+    	<action name="changeSkinStatus" class="changeSkinStatusAction">
+    		<!-- ajax -->
+    	</action>
+    	
+    	
+    	
+    </package>
+    
+      
+</struts>   

@@ -1,0 +1,13 @@
+*{margin:0; padding:0; list-style:none; }
+body{ background:#fff; font:normal 12px/22px "微软雅黑"; font-family: "微软雅黑" }
+img{ border:0;  }
+
+.btn-default{
+	background-color: #007fff;
+}
+.btn-danger{
+	background-color: #ff6666;
+}
+.ui-accordion .ui-accordion-header{
+	font-size: 130%;
+}

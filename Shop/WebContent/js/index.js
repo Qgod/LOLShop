@@ -1,0 +1,9 @@
+$(function(){
+	$("#h1").css('display','');
+	$("#h2").css('display','none');
+	$("#h3").css('display','none');
+	$("#h4").css('display','');
+	$("#h5").css('display','');
+	$("#h6").css('display','');
+	$("#h7").css('display','');
+});

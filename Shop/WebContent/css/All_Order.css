@@ -1,0 +1,12 @@
+*{margin:0; padding:0; list-style:none; }
+body{ background:#fff; font:normal 14px/22px "微软雅黑"; font-family: "微软雅黑" }
+img{ border:0;  }
+
+.all{
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+}
+hr{
+	border-color: #ff6666;
+}

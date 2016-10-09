@@ -1,0 +1,159 @@
+body{
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+#head{
+	width: 100%;
+	height: 30px;
+	background-color: #F1F1F1;
+	line-height: 30px;
+}
+#head div ul li{
+	list-style-type: none;
+	font-family: 宋体;
+	font-size: 14px;
+	display: inline-block;
+}
+#head div ul li a{
+	color: #666666;
+	font-weight: 300;
+	text-decoration: none;
+	margin: 10px;
+}
+#head div ul li a:hover{
+	color: red;
+	font-weight: 500;
+}
+#h2{
+	float: right;
+}
+#h3{
+	float: right;
+}
+#h4{
+	float: right;
+	color: red;
+}
+
+#h5{
+	float: right;
+}
+#h6{
+	float: right;
+}
+#h7{
+	float: right;
+}
+#logoandsearch{
+	width: 85%;
+	padding: auto;
+	margin: auto;
+	background-color: white;
+	height: 150px; 
+}
+#search a{
+	display:inline-block;
+	background-color: red;
+	width: 100px;
+	height: 40px;
+	margin-top: 60px;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	text-decoration:none;
+}
+#search a:hover{
+	text-decoration:none;
+}
+#nav ul li{
+	display: inline-block;
+	list-style-type: none;
+	margin: 8px;
+	line-height: 30px;
+}
+#nav ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+	font-family: "Microsoft Yahei";
+}
+#nav ul li a:hover{
+	text-decoration: none;
+	color: red;
+}
+#fenlei table tr td a{
+	font-size: 14px;
+	font-family: "Microsoft Yahei";
+	color: black;
+	text-decoration: none;
+}
+#fenlei table tr td a:hover{
+	font-size: 14px;
+	font-family: "Microsoft Yahei";
+	color: red;
+}
+#tuijian tr td a div{
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=white,direction=120,strength=3);/*ie*/
+	-moz-box-shadow: 2px 2px 10px white;/*firefox*/
+	-webkit-box-shadow: 2px 2px 10px white;/*safari或chrome*/
+	box-shadow:2px 2px 10px white;/*opera或ie9*/
+}
+#tuijian tr td a div:hover{
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=150,strength=3);/*ie*/
+	-moz-box-shadow: 4px 4px 10px gray;/*firefox*/
+	-webkit-box-shadow: 4px 4px 10px gray;/*safari或chrome*/
+	box-shadow:4px 4px 10px gray;/*opera或ie9*/
+}
+#tuijian tr td a div span{
+	font-size: 13px;
+	color: gray;
+	font-family: "Microsoft Yahei";
+}
+#dp{
+	letter-spacing: 4px;
+	font-size: 13px;
+	font-family: "Microsoft Yahei";
+}
+#dp2 tr td a div span{
+	font-size: 13px;
+	color: gray;
+	font-family: "Microsoft Yahei";
+}
+#dp2 tr td a div{
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=white,direction=120,strength=3);/*ie*/
+	-moz-box-shadow: 2px 2px 10px white;/*firefox*/
+	-webkit-box-shadow: 2px 2px 10px white;/*safari或chrome*/
+	box-shadow:2px 2px 10px white;/*opera或ie9*/
+}
+#dp2 tr td a div:hover{
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=lightgray,direction=120,strength=3);/*ie*/
+	-moz-box-shadow: 2px 2px 10px lightgray;/*firefox*/
+	-webkit-box-shadow: 2px 2px 10px lightgray;/*safari或chrome*/
+	box-shadow:2px 2px 10px lightgray;/*opera或ie9*/
+}
+
+#nav_foot{
+font-size: 14px;
+margin: 0;
+padding: 0;
+white-space: nowrap;
+text-align: center;
+}
+#nav_foot li{
+display:inline;
+list-style-type: none;
+}
+#nav_foot li a{
+padding: 5px 8px;
+line-height: 50px;
+color: #FFFFBF;
+}
+#nav_foot li a:link,#nav_foot li a:visited{
+text-decoration: none;
+}
+#nav_foot li a:hover{
+color: #FFFFFF;
+font-size:15px;
+text-decoration: none;
+}
